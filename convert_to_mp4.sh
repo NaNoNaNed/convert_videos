@@ -18,7 +18,7 @@ if [[ "$INPUT_FILE" != *.mov ]]; then
   exit 3
 fi
 
-OUTPUT_FILE="/home/roman/Videos/DaVinci/${INPUT_FILE%.mov}.mp4"
+OUTPUT_FILE="$HOME/Videos/DaVinci/${INPUT_FILE%.mov}.mp4"
 
 # Get total duration in seconds
 DURATION_SEC=$(ffprobe -v error -select_streams v:0 \
